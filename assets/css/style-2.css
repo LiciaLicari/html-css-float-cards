@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* #region var-color */
+
+:root {
+    --fc-bg: #fffffe;
+    --fc-title: #e53170;
+    --fc-bg-cards: #0f0e17; 
+    --fc-mail: #228fee;
+    --fc-work: #edeaeb;
+}
+
+/* #endregion var-color */
+
+
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+body {
+    background-color: var(--fc-bg);
+}
+
+h1 {
+    color: var(--fc-title);
+}
+
+
+.container {
+    max-width: 1170px;
+    width: 90%;
+    margin: auto;
+}
+
+h1, 
+.container > p{
+    text-align: center;    
+    margin: 2rem;
+}
+
+
+.row {
+    margin-top: 4rem;
+}
+
+
+.col {
+    float: left;
+    width: calc(100%/3 - 1rem);
+    margin-right: 1rem;
+    box-shadow: 0 0 1rem lightgrey;
+    background-color: var(--fc-bg-cards);
+    height: 100px;
+}
+
+
+.col-img {
+    float: left;
+    max-width: 100px;
+}
+
+
+.col-img img {
+    width: 100%;
+}
+
+
+.col-info {
+    float: left;
+    font-size: 0.9rem;
+    width: calc(100% - 100px);
+    height: 100px;
+    color: var(--fc-bg);
+}
+
+
+.col-info *{
+    padding: 0.7rem .5rem 0 1rem;
+    display: block;
+}
+
+
+.col-info span {
+    color: var(--fc-work);
+}
+
+
+.col-info a {
+    color: var(--fc-mail);
+    text-decoration: none;
+}
+
+
+
+
